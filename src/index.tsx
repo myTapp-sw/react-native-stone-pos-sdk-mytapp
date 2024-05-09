@@ -100,6 +100,10 @@ export function makeTransaction(
   );
 }
 
+export function cancelRunningTaskMakeTransaction(): Promise<Boolean> {
+  return StonePosSdk.cancelRunningTaskMakeTransaction();
+}
+
 export function printReceiptInPOSPrinter(
   receiptType: ReceiptType,
   transactionAtk: String,
