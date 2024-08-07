@@ -97,7 +97,7 @@ class StonePosSdkModule(reactContext: ReactApplicationContext) :
 
         Stone.setAppName(appName)
 
-        promise.resolve(true)
+        promise.resolve(currentUserList)
       }
     } catch (e: Exception) {
       promise.reject(e)

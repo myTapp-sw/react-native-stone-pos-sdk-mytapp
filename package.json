@@ -1,6 +1,6 @@
 {
   "name": "react-native-stone-pos-sdk-mytapp",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "description",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",

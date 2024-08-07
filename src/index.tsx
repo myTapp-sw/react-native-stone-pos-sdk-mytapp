@@ -34,7 +34,7 @@ export function initSDK(
   appName: String,
   qrCodeProviderKey: String = '',
   qrCodeProviderAuthorization: String = ''
-): Promise<boolean> {
+): Promise<any> {
   if (!qrCodeProviderAuthorization || !qrCodeProviderKey) {
     console.warn(
       'You forgot to provide qrCodeProviderKey or qrCodeProviderAuthorization, PIX will NOT work'
