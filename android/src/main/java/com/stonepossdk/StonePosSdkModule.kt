@@ -87,17 +87,23 @@ class StonePosSdkModule(reactContext: ReactApplicationContext) :
       synchronized(this) {
         STONE_QRCODE_PROVIDER_ID = qrCodeProviderKey
         STONE_QRCODE_AUTHORIZATION = qrCodeProviderAuthorization
-
+  
         currentUserList = StoneStart.init(
           reactApplicationContext, hashMapOf(
             StoneKeyType.QRCODE_PROVIDERID to qrCodeProviderKey,
             StoneKeyType.QRCODE_AUTHORIZATION to qrCodeProviderAuthorization
           )
         )
-
+  
         Stone.setAppName(appName)
-
-        promise.resolve(currentUserList)
+  
+        // Converter currentUserList para um array JSON
+        val jsonArray = org.json.JSONArray()
+        for (user in currentUserList) {
+          jsonArray.put(user.toString()) // Ajuste conforme necessário para o tipo de dados real
+        }
+  
+        promise.resolve(jsonArray.toString())
       }
     } catch (e: Exception) {
       promise.reject(e)
