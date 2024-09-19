@@ -41,14 +41,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brunodsazevedo/react-native-stone-pos-sdk.git"
+    "url": "git+https://github.com/myTapp-sw/react-native-stone-pos-sdk-mytapp.git"
   },
-  "author": "brunodsazevedo <bruno.ds.azevedo@gmail.com> (https://github.com/brunodsazevedo)",
+  "author": "jose-lehmkuhl <josevicentekoerich@gmail.com> (https://github.com/jose-lehmkuhl)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/brunodsazevedo/react-native-stone-pos-sdk/issues"
+    "url": "https://github.com/myTapp-sw/react-native-stone-pos-sdk-mytapp/issues"
   },
-  "homepage": "https://github.com/brunodsazevedo/react-native-stone-pos-sdk#readme",
+  "homepage": "https://github.com/myTapp-sw/react-native-stone-pos-sdk-mytapp#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
